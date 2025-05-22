@@ -40,7 +40,7 @@ func setup404Handler(router *gin.Engine) {
 			// 默认返回 JSON
 			c.JSON(http.StatusNotFound, gin.H{
 				"error_code":    http.StatusNotFound,
-				"error_message": "路哟喂定义，请确认 url 和请求方法是否正确。",
+				"error_message": "路由未定义，请确认 url 和请求方法是否正确。",
 			})
 		}
 	})
